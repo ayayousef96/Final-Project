@@ -37,7 +37,8 @@ const Login = () => {
 			</div>
 				<div className={styles.left}>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Login to Your Account</h1>
+						<h1>Math With Aya</h1>
+						<h3>Login to Your Account</h3>
 						<input
 							type="email"
 							placeholder="Email"
@@ -58,10 +59,10 @@ const Login = () => {
 						/>
 						{error && <div className={styles.error_msg}>{error}</div>}
 						<button type="submit" className={styles.green_btn}>
-							Sing In
+							Sign In
 						</button>
 						<br></br><br/>
-						<h1>New Here ?</h1>
+						<h2>New Here ?</h2>
 						<Link to="/signup">
 							<button type="button" className={styles.green_btn}>
 								Sign Up
