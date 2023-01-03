@@ -3,6 +3,10 @@ import Main from "./components/Main";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Calculator from "./components/Calculator/Calculator.jsx";
+import Solver from "./components/PolynomialSolver/Solver";
+import Board from "./components/Board/Board";
+// 
+import Plot from "./components/Plot/Plot";
 import './App.css';
 
 function App() {
@@ -15,6 +19,12 @@ function App() {
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
 			<Route path="/calculator"  exact element={<Calculator />}/>
+			<Route path="/solver"  exact element={<Solver />}/>
+			<Route path="/plot"  exact element={<Plot/>}/>
+			<Route path="/board"  exact element={<Board/>}/>
+			
+
+
 		</Routes>
     
   );

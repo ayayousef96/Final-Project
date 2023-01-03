@@ -16,6 +16,26 @@ const Main = () => {
 						Calculator
 					</button>
 				</Link>
+				<Link to="/solver">
+					<button className={styles.white_btn} >
+						Polynom Solver
+					</button>
+				</Link>
+				<Link to="/plot">
+					<button className={styles.white_btn} >
+						Plot
+					</button>
+				</Link>
+				<Link to="/board">
+					<button className={styles.white_btn} >
+						Board
+					</button>
+				</Link>
+				{/* <Link to="/class">
+					<button className={styles.white_btn} >
+						join Class
+					</button>
+				</Link> */}
 				<button className={styles.white_btn} onClick={handleLogout}>
 					Logout
 				</button>
