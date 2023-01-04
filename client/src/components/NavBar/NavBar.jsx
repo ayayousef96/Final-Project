@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./styles.module.css";
+
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -8,6 +8,7 @@ const NavBar = () => {
 		window.location.reload();
 	};
 
+    
     return (
         <div>
             <div className={styles.main_container}>
