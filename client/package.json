@@ -10,6 +10,7 @@
     "axios": "^1.2.1",
     "chartjs": "^0.3.24",
     "cross-env": "^7.0.3",
+    "devtools": "^8.1.2",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
