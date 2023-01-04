@@ -20,8 +20,8 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			//const url = "https://final-project-m3s4.onrender.com";
-			const url = "http://localhost:8080/api/users";
+			const url = "https://final-project-m3s4.onrender.com/api/users";
+			//const url = "http://localhost:8080/api/users";
 			const { data: res } = await axios.post(url, data);
 			navigate("/login");
 			console.log(res.message);
