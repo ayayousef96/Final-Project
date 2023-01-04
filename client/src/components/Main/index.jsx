@@ -40,7 +40,9 @@ const Main = () => {
 					Logout
 				</button>
 			</nav>
+			<h1>welcome</h1>
 		</div>
+		
 	);
 };
 
