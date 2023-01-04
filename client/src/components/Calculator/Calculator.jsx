@@ -119,9 +119,11 @@ const Calculator = () => {
     }
 
     return (
+        <div>
+            <NavBar />
         <center>
         <div className="calculator">
-            <NavBar />
+            
             <div className="calculator__result">
                 <div ref={expRef} className="calculator__result__exp"></div>
                 <div className="calculator__result__exp"></div>
@@ -141,6 +143,7 @@ const Calculator = () => {
             </div>
         </div>
         </center>
+        </div>
     
     );
 }
