@@ -88,7 +88,8 @@ const Calculator = () => {
                     expDiv.innerHTML = '';
                     addAnimSpan(Math.floor(res * 100000000) / 100000000);
                 }, 200);
-            } catch {
+            } catch(e) {
+                console.log(e);
                 // setTimeout(() => {
                 //     cloneNode.style.transform = transform;
                 //     cloneNode.innerHTML = 'Syntax err';
