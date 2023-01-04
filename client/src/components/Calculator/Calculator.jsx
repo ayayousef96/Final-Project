@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 import './calculator.css';
+import NavBar from '../NavBar/NavBar';
 
 import { btns, BTN_ACTIONS } from './btnConfig';
 // import React, { useState } from "react";
@@ -120,6 +121,7 @@ const Calculator = () => {
     return (
         <center>
         <div className="calculator">
+            <NavBar />
             <div className="calculator__result">
                 <div ref={expRef} className="calculator__result__exp"></div>
                 <div className="calculator__result__exp"></div>
