@@ -1,5 +1,6 @@
 import React , {useState} from 'react';
 import './style.css';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -99,6 +100,7 @@ const Solver = () => {
         
         
         <div>
+            <NavBar />
             <div className="top-section">
 
             <h1>Polynomial Equation Solver</h1>

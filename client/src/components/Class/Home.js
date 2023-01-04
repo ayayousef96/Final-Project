@@ -1,7 +1,8 @@
 
 import React , {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./class.css"
+import "./class.css";
+import NavBar from '../NavBar/NavBar';
 
 const Home = () => {
     const [RoomCode, SetRoomCode]= useState("");
@@ -15,6 +16,7 @@ const Home = () => {
     
     return (
         <div>
+            <NavBar />
             <form action='' onSubmit={sumbitCode} className="class-form">
                 <label htmlFor='' className='room-code'>Enter The Room Code</label>
                 <input  type="text" className='b-input' required placeholder='Enter Room Code'

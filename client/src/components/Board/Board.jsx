@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import NavBar from "../NavBar/NavBar";
 import Toolkit from "./Toolkit";
 import Canvas from "./Canvas";
 import "./board.css"
@@ -29,6 +29,8 @@ export default function Board() {
   const [canvasRef, setCanvasRef] = useState(null);
   const [eraser, setEraser] = useState(false);
   return (
+    <div>
+      <NavBar />
     <div className="Board">
         <div className="absolute-toolkit">
         <div className="toolkit">
@@ -55,6 +57,7 @@ export default function Board() {
       />
       
      
+    </div>
     </div>
   );
 }
