@@ -10,9 +10,9 @@ const Solver = () => {
     const [roots,setRoots] =useState ([]);
     // const [CriticalPoints,setCriticalPoints] =useState([]);
     const [Derivative,setDerivative] =useState("");
-    // const[min,setMin]=useState(0);
-    // const[max,setMax]=useState(0);
-    // const [curveArea,setCurveAre] =useState();
+    const[min,setMin]=useState(0);
+    const[max,setMax]=useState(0);
+    const [curveArea,setCurveAre] =useState();
 
 
     function removeDuplicates(arr) {
@@ -77,23 +77,23 @@ const Solver = () => {
             <h4>{Derivative}</h4>
         )
     }
-    // const handleMin = (event) => {
-    //     setMin(event.target.value);
+    const handleMin = (event) => {
+        setMin(event.target.value);
 
-    // }
-    // const handleMax = (event) => {
-    //     setMax(event.target.value);
+    }
+    const handleMax = (event) => {
+        setMax(event.target.value);
         
-    // }
-    // const calculateCurveArea = () => {
-    //     var polynomialSolver = require("polynomial-solver");
-    //     setCurveAre(polynomialSolver.curveArea(input, min, max));
+    }
+    const calculateCurveArea = () => {
+        var polynomialSolver = require("polynomial-solver");
+        setCurveAre(polynomialSolver.curveArea(input, min, max));
          
-    // }
-    // const displayCurveArea = () =>{
-    //     return(<h3>{curveArea}</h3>)
+    }
+    const displayCurveArea = () =>{
+        return(<h3>{curveArea}</h3>)
 
-    // }
+    }
 
     return (
         
@@ -137,7 +137,7 @@ const Solver = () => {
     
 
         </div>
-        {/* <div id="curve">
+        <div id="curve">
             <h3><button onClick={calculateCurveArea}>calculate curve area</button> : ( 
             
             <input className='interval' onChange={event => handleMin(event) }></input>
@@ -148,7 +148,7 @@ const Solver = () => {
             </h3>
             {displayCurveArea()}
             
-        </div> */}
+        </div>
         <div id="tangent"></div>
     </div>
     );
