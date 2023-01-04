@@ -5,7 +5,8 @@ import Login from "./components/Login";
 import Calculator from "./components/Calculator/Calculator.jsx";
 import Solver from "./components/PolynomialSolver/Solver";
 import Board from "./components/Board/Board";
-// 
+import Home from "./components/Class/Home";
+import Room from "./components/Class/Room";
 import Plot from "./components/Plot/Plot";
 import './App.css';
 
@@ -22,6 +23,8 @@ function App() {
 			<Route path="/solver"  exact element={<Solver />}/>
 			<Route path="/plot"  exact element={<Plot/>}/>
 			<Route path="/board"  exact element={<Board/>}/>
+			<Route path="/classroom"  exact element={<Home />}/>
+			<Route path="/room/:roomID" element={<Room />}/>
 			
 
 

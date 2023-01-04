@@ -1,0 +1,39 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.class-form{
+    display: flex;
+    flex-direction: column;
+    padding:  10px;
+    align-items: center;
+    justify-content: center;
+}
+.room-code{
+    font: bold;
+    padding-top: 20px;
+}
+.b-input{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    font: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    
+}
+::placeholder{
+    color: white;
+}
+
+.enter{
+    background-color: rgb(33, 145, 33);
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    
+    padding: 10px;
+}

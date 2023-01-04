@@ -31,11 +31,11 @@ const Main = () => {
 						Board
 					</button>
 				</Link>
-				{/* <Link to="/class">
+				<Link to="/classroom">
 					<button className={styles.white_btn} >
-						join Class
+						join / create  Class
 					</button>
-				</Link> */}
+				</Link>
 				<button className={styles.white_btn} onClick={handleLogout}>
 					Logout
 				</button>

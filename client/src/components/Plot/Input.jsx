@@ -1,6 +1,6 @@
 import { evaluate } from "mathjs";
 import { useState } from "react";
-import Graph from "./Graph";
+// import Graph from "./Graph";
 
 
 function Input(props){
