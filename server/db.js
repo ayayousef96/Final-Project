@@ -8,8 +8,9 @@ module.exports = () => {
 		useUnifiedTopology: true,
 	};
 	try {
+		mongoose.set('strictQuery', false);
 		mongoose.connect(
-			`mongodb+srv://${process.env.CLUSTER_NAME}:${process.env.CLUSTER_PASS}@cluster0.dk0cucm.mongodb.net/?retryWrites=true&w=majority`
+			process.env.DATABASE
 		);
 		console.log("Connected to database successfully");
 	} catch (error) {
