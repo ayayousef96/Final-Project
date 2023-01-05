@@ -21,7 +21,7 @@ const Home = () => {
                 <h3 htmlFor='' className='room-code'>Join class Room </h3>
                 <input  type="text" className='b-input' required placeholder='Enter Room Code'
                 value={RoomCode} onChange={(e) => SetRoomCode(e.target.value)}/>
-                <button type='sumbit' className='enter'>Enter Room</button>
+                <button type='sumbit' className='enter'>Enter / Create Room</button>
                 <br></br><br></br>
                 {/* <h3 htmlFor='' className='room-code'>create  class Room </h3>
                 <input  type="text" className='b-input' required placeholder='Create Room Code'
