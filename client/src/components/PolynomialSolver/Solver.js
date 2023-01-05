@@ -105,27 +105,22 @@ const Solver = () => {
 
             <h1>Polynomial Equation Solver</h1>
             <br></br>
-            {/* <h3>Choose an option</h3> */}
-            {/* <button onClick={handleroots}  className="dropdown-item btn btn-light" id="1" type="button" data-toggle="tooltip" data-placement="bottom" title="Calculate the real roots of polynomial">Calculate Roots</button>
-            <button onClick={handleCriticalPoints} className="dropdown-item btn btn-light" id="2" type="button" data-toggle="tooltip" data-placement="bottom" title="Find the Critical Points in a polynomial">Critical Points</button>
-            <button  className="dropdown-item btn btn-light" id="3" type="button" data-toggle="tooltip" data-placement="bottom" title="Find the equation of polynomial when roots are known">Generate Equation</button> 
-             <button  className="dropdown-item btn btn-light" id="4" type="button" data-toggle="tooltip" data-placement="bottom" title="Calculate the area of curve in an interval">Curve Area</button>
-            <button  className="dropdown-item btn btn-light" id="5" type="button" data-toggle="tooltip" data-placement="bottom" title="Calculate the length of curve in an interval">Curve Length</button> */}
-            {/* <button>plot</button>  */}
+           
 
 
             <div  className="form">
+                <h3>Insert Polynom Equation</h3>
                 <input id="coefInput"  onChange={event => HandleInput(event)}></input>
                
             </div>
-            <button  onClick={refreshPage} >clear</button>
-            
+            {/* <button  onClick={refreshPage} >clear</button>
+             */}
 
         </div>
 
 
         <div id="result">
-            <button onClick={handleroots}>calculate roots</button>
+            <button className='sbtn' onClick={handleroots}>calculate roots</button>
             {displayRoots()}
         </div>
         {/* <div className='critical Points'>
@@ -134,13 +129,13 @@ const Solver = () => {
 
         </div> */}
         <div className='Derivative'>
-            <button onClick={handleDerivative}>get Derivative</button>
+            <button  className='sbtn'onClick={handleDerivative}>get Derivative</button>
             {displayDerivative()}
     
 
         </div>
         <div id="curve">
-            <h3><button onClick={calculateCurveArea}>calculate curve area</button> : ( 
+            <h3><button className='sbtn' onClick={calculateCurveArea}>calculate curve area</button> : ( 
             
             <input className='interval' onChange={event => handleMin(event) }></input>
             ,

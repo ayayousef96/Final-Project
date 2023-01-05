@@ -12,7 +12,12 @@ const NavBar = () => {
         <div>
             <div className={styles.main_container}>
 			<nav className={styles.navbar}>
-				<h1>Home</h1>
+            <h4>--MathWithAya---</h4>
+				<Link to="/">
+					<button className={styles.white_btn} >
+						Home
+					</button>
+				</Link>
 				<Link to="/calculator">
 					<button className={styles.white_btn} >
 						Calculator
@@ -38,11 +43,20 @@ const NavBar = () => {
 						join / create  Class
 					</button>
 				</Link>
-				<button className={styles.white_btn} onClick={handleLogout}>
+                <Link to="/login">
+				<button className={styles.white_btn} >
 					Logout
 				</button>
+
+				</Link>
+				{/* <button className={styles.white_btn} onClick={handleLogout}>
+					Logout
+				</button> */}
 			</nav>
             </div>
+            
+
+           
             
         </div>
     );

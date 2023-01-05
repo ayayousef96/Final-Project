@@ -24,11 +24,7 @@ const Toolkit = ({
       }
       console.log(eraser);
     };
-    // const HandleGithub = () => {
-    //   const a = document.createElement("a");
-    //   a.href = "https://github.com/RajuKanaka/whiteboard";
-    //   a.click();
-    // };
+ 
     return (
       <>
         <button onClick={HandleDecrement} className="tool increment br">

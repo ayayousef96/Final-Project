@@ -1,4 +1,4 @@
-.container {
+.container-plot {
     display: grid;
     width: 750px;
     height: 600px;
@@ -28,7 +28,7 @@
   /* OTHER STYLES */
   
   body {
-    background-color:#cee0e0;
+    background-color:#e8eded;
     display: flex;
     justify-content: center;
     padding: 20px;

@@ -10,10 +10,10 @@ function Input(props){
         setGraph(document.querySelector("input").value);
         
     }
-const re = /(?:(?:^|[_*/])(?:\s*-?\d+(\.\d+)?(?:[eE]?\d+)?\s*))+$/;
-const rep=/\b(sin|cos|tan)\b/;
-const reu=/[a-z]/;
-const x=/\b(x)\b/;
+    const re = /(?:(?:^|[_*/])(?:\s*-?\d+(\.\d+)?(?:[eE]?\d+)?\s*))+$/;
+    const rep=/\b(sin|cos|tan)\b/;
+    const reu=/[a-z]/;
+    const x=/\b(x)\b/;
 
     function transfer(event){
     

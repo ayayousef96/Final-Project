@@ -4,10 +4,7 @@ import './calculator.css';
 import NavBar from '../NavBar/NavBar';
 
 import { btns, BTN_ACTIONS } from './btnConfig';
-// import React, { useState } from "react";
-// import ScienitificCalc from "./ScientificCalc";
-// import NormalCalc from "./Normalcalc";
-// import { Switch } from 'evergreen-ui';
+
 
 const Calculator = () => {
     
@@ -122,6 +119,7 @@ const Calculator = () => {
         <div>
             <NavBar />
         <center>
+            <br></br>
         <div className="calculator">
             
             <div className="calculator__result">

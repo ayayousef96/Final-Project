@@ -18,10 +18,16 @@ const Home = () => {
         <div>
             <NavBar />
             <form action='' onSubmit={sumbitCode} className="class-form">
-                <label htmlFor='' className='room-code'>Enter The Room Code</label>
+                <h3 htmlFor='' className='room-code'>Join class Room </h3>
                 <input  type="text" className='b-input' required placeholder='Enter Room Code'
                 value={RoomCode} onChange={(e) => SetRoomCode(e.target.value)}/>
                 <button type='sumbit' className='enter'>Enter Room</button>
+                <br></br><br></br>
+                <h3 htmlFor='' className='room-code'>create  class Room </h3>
+                <input  type="text" className='b-input' required placeholder='Create Room Code'
+                value={RoomCode} onChange={(e) => SetRoomCode(e.target.value)}/>
+                <button type='sumbit' className='enter'>Enter Room</button>
+
             </form>
            
         </div>

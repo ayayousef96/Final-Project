@@ -12,20 +12,29 @@ function Plot(){
      setGraph(funct);
      console.log(graphplot);
   }
-  return(<div className="container" >
+  return(<div>
+     <NavBar />
+     <Nav />
+     <div className="sidebar"><Input plot={graphProp}></Input></div>
     
-  <div className="header">
-    <NavBar />
-    <Nav />
+  <div className="container-plot" >
+ 
     
-    </div>
+    
+  {/* <div className="header">
+ 
+  
+    
+   
+    
+    </div> */}
     <div >
     <ErrorBoundary>
-        <div className="sidebar"><Input plot={graphProp}></Input></div>
         <div className="content-1"><Graph graphToPlot={graphplot}/></div>
     </ErrorBoundary>
     </div>
   
+  </div>
   </div>);
 }
 
